@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Usuario</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/general.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div class="auth-container">
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form" method="POST" action="login-form">
+            <input type="text" id="username" name="username" placeholder="Usuario" required>
+            <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+        <p id="error-message" class="error"></p>
+
+        <!-- Botón de registro de usuario -->
+        <button id="register-button">¿No tienes cuenta? Regístrate aquí</button>
+    </div>
+
+    <!-- Imágenes -->
+    <div id="Logo_AI">
+        <img src="imagenes/LogoAI.png" alt="Logo Empresa" width="150" height="150">
+    </div>
+    <div id="Logo_MF">
+        <img src="imagenes/LogoMF.png" alt="Logo" width="150" height="150">
+    </div>
+    
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

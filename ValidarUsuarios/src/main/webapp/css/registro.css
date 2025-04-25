@@ -1,0 +1,101 @@
+body {
+    background: linear-gradient(to top, #1B5E20, #A5D6A7);
+    display: flex;
+    flex-direction: column; /* Cambiado para que las imágenes no choquen */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px; /* Para que tenga espacio en pantallas pequeñas */
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .auth-container-registro {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    box-sizing: border-box;
+  }
+  
+  .auth-container-registro h2 {
+    color: #00000094;
+  }
+  
+  .auth-container-registro input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    display: block;
+    box-sizing: border-box;
+  }
+  
+  .auth-container-registro button {
+    width: 90%;
+    padding: 10px;
+    background-color: #e73e3ed2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto;
+    display: block;
+  }
+  
+  .auth-container-registro button:hover {
+    background-color: #6ce651d2;
+  }
+  
+  .auth-container-registro .error {
+    color: #E74C3C;
+    margin-top: 10px;
+    display: none;
+  }
+  
+  /* === RESPONSIVE === */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+    .auth-container-registro {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    .auth-container-registro input,
+    .auth-container-registro button {
+      width: 100%;
+      font-size: 16px;
+    }
+  
+    .auth-container-registro h2 {
+      font-size: 22px;
+    }
+  }
+  
+  /* Móviles */
+  @media (max-width: 480px) {
+    .auth-container-registro {
+      padding: 10px;
+    }
+  
+    .auth-container-registro input,
+    .auth-container-registro button {
+      width: 100%;
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .auth-container-registro h2 {
+      font-size: 20px;
+    }
+  
+    .auth-container-registro label {
+      font-size: 14px;
+    }
+  }
+  
